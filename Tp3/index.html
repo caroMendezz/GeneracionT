@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp3</title>
+</head>
+<body>
+    <h1 style="color: #4A90E2; font-family: 'Arial', sans-serif; text-align: center;">
+        Pagina de ejemplo
+    </h1>
+
+    <p style="background-color: #F0F8FF; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 8px rgba(0,0,0,0.2); max-width: 600px; margin: 0 auto;">
+        Se mostrara el siguiente parrafo que tiene estilos aplicados con 7 propiedades CSS diferentes usando el atributo <code>style</code>. Algunas de las propiedades nuevas que se aplican aca son:
+        <ul>
+            <li><strong>border-radius</strong>: bordes redondeados.</li>
+            <li><strong>box-shadow</strong>: sombra alrededor del elemento.</li>
+            <li><strong>max-width</strong>: ancho maximo para mejorar la legibilidad.</li>
+            <li><strong>padding</strong>: espacio interior para separar el texto de los bordes.</li>
+            <li><strong>background-color</strong>: color de fondo suave.</li>
+            <li><strong>color</strong>: color del texto (en el h1).</li>
+            <li><strong>text-align</strong>: alinear texto al centro.</li>
+        </ul>
+    </p>
+
+    <button style="background: linear-gradient(45deg, #6a11cb, #2575fc); border: none; color: white; padding: 10px 25px; border-radius: 25px; cursor: pointer; font-weight: bold; transition: transform 0.3s ease;">
+        Boton
+    </button>
+
+    <script>
+        // Para efecto hover sin CSS externo, un poco de JS para el botón
+        const btn = document.querySelector("button");
+        btn.addEventListener("mouseenter", () => {
+            btn.style.transform = "scale(1.1)";
+        });
+        btn.addEventListener("mouseleave", () => {
+            btn.style.transform = "scale(1)";
+        });
+    </script>
+    
+</body>
+</html>
