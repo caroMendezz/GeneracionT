@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.ejercicio {
+    margin-bottom: 50px;
+}
+
+/*reutilizables */
+.item {
+    background-color: rgb(153, 145, 223);
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #484646;
+}
+
+
+/* Ejercicio 1: Flex basico */
+.flex-basico {
+    display: flex; /*Define un contenedor flex*/
+    gap: 10px;
+}
+
+/* Ejercicio 2: Direcciion y flex-wrap */
+.flex-direccion-wrap {
+    display: flex;
+    flex-wrap: wrap; /*Permite que los elementos pasen a otra línea si no caben*/
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.flex-direccion-wrap.row {
+    flex-direction: row; /*Distribuye los elementos en fila (por defecto)*/
+}
+
+.flex-direccion-wrap.column {
+    flex-direction: column; /*Coloca los elementos en columna*/
+}
+
+/*Ejercicio 3: Justify y Align */
+.flex-align {
+    display: flex;
+    justify-content: space-around; /*Distribuye con espacio alrededor de los elementos */
+    align-items: flex-start; /*Alinea los elementos arriba (eje cruzado) */
+    gap: 10px;
+    height: 150px;
+}
+
+.flex-align .alto {
+    height: 120px;
+}
+.flex-align .bajo {
+    height: 40px;
+}
+.flex-align .medio {
+    height: 80px;
+}
+
+/*Ejercicio 4: Order y flex individual */
+.flex-orden {
+    display: flex;
+    gap: 10px;
+}
+
+/*
+  order cambia el orden visual sin alterar el orden en HTML
+  flex: crecimiento, encogimiento, tamaño base
+  align-self: sobreescribe la alineación individual
+*/
+
+/*Ejercicio 5: Layout completo */
+.layout {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+}
+
+.layout header,
+.layout footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.layout main {
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+}
+
+.layout aside {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.layout section {
+    flex: 3;
+    background-color: #ddd;
+    padding: 20px;
+}
