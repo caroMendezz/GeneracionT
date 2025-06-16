@@ -1,2 +1,2 @@
 # GeneracionT
-Trabajos Practicos
+Trabajos Practico
