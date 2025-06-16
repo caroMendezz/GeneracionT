@@ -1,0 +1,123 @@
+/*1- Cinco maneras de seleccionar #especial con distinto color de fondo */
+#especial { background-color: lightblue; } /*Por id */
+div#especial { background-color: lightgreen; } /*etiqueta + id */
+*[id="especial"] { background-color: lightcoral; } /*selector atributo */
+div.destacado#especial { background-color: lightgoldenrodyellow; } /*etiqueta + clase + id */
+#especial.destacado.multiple { background-color: lightpink; } /* id + varias clases */
+
+/*2- Elementos pares de .lista-items (nth-child par) */
+.lista-items li:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/* 3 y 4- Pseudo-clases y pseudo-elementos */
+/* Ejemplo pseudo-clase :hover en button (punto 16) */
+button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+/*Pseudo-elemento ::before para agregar contenido antes de div.destacado */
+.destacado::before {
+    content: "★ ";
+    color: gold;
+}
+
+/*5- Seleccionar .destacado y cambiar color texto */
+.destacado {
+    color: darkred;
+}
+
+/*6- Primer parrafo de cada sección */
+section p:first-of-type {
+    font-weight: bold;
+}
+
+/*7- Divs hijos directos de otro div con borde */
+div > div {
+    border: 2px solid #333;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+/*8- ultimo elemento de lista ordenada */
+ol li:last-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*9- Enlaces sin target="_blank" */
+a:not([target="_blank"]) {
+    text-decoration: underline;
+}
+
+/* 10- Parrafos dentro de article con interlineado */
+article p {
+    line-height: 1.8;
+}
+
+/* 11- h2 que tengan un span dentro */
+h2 span {
+    color: #007acc;
+}
+
+/* 12- Imagenes con atributo alt definido */
+img[alt] {
+    border: 3px solid #555;
+    padding: 2px;
+}
+
+/* 13- Tercer elemento de una lista desordenada */
+ul li:nth-child(3) {
+    font-style: italic;
+}
+
+/* 14- Elementos impares de una tabla (filas impares) */
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* 15- Div con al menos dos clases */
+div[class*=" "], /* contiene espacio en clases */
+div[class~="destacado"] { /* clase especifica, pero para asegurar ejemplo */
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+}
+
+/* 17. Inputs tipo text dentro de form */
+form input[type="text"] {
+    border: 2px solid #007acc;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+/* 18- P que sigue inmediatamente a un h3 */
+h3 + p {
+    color: #ff5722;
+}
+
+/* 19- Enlaces visitados opacos */
+a:visited {
+    opacity: 0.6;
+}
+
+/* 20- strong dentro de p */
+p strong {
+    color: #b71c1c;
+}
+
+/* 21- Input deshabilitado en gris */
+input:disabled {
+    background-color: #ccc;
+    color: #666;
+}
+
+/* 22- li dentro de nav con espaciado */
+nav li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+/* 23- Elementos que contengan la palabra "importante" en la clase */
+[class*="importante"] {
+    font-weight: bold;
+}
