@@ -2,14 +2,12 @@
 
 > Repositorio con trabajos prácticos realizados en el curso de Desarrollo Web de Generación T.
 
-﹌﹌﹌
 
 # 𝜗ৎ Tecnologías utilizadas
 - HTML5  
 - CSS3  
 - JavaScript (interacciones básicas)
 
-﹌﹌﹌
 
 ## 𝜗ৎ Contenido del repositorio
 
@@ -34,13 +32,11 @@ Este repositorio contiene algunos de los trabajos prácticos realizados durante 
 - Validación de datos
 - Organización con `fieldset`
 
-﹌﹌﹌
 
 ## 𝜗ৎ Objetivo
 
 Practicar los fundamentos del desarrollo web, aplicando HTML y CSS en distintos ejercicios.
 
-﹌﹌﹌
 
 ## 𝜗ৎ Estado del proyecto
 
